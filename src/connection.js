@@ -8,13 +8,9 @@ if (!process.env.MONGO_URL) {
 }
 
 mongoose
-  .connect(process.env.MONGO_URL, {
-    serverSelectionTimeoutMS: 30000,
-    socketTimeoutMS: 60000,
-    maxPoolSize: 10,
-  })
+  .connect(process.env.MONGO_URL)
   .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => console.log("db error", err.message));
+  .catch((error) => console.log("db error", error.message));
 
 const logFolder = path.join(__dirname, "log");
 
