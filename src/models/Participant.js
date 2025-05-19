@@ -1,5 +1,5 @@
 const { Schema, model } = require("mongoose");
-const roleEnum = ["Project Managers", "Main performers", "Students", "Other"];
+const roleEnum = ["Project Managers", "Main performers", "Students", "Others"];
 const participantSchema = new Schema(
   {
     fullNameUz: {
