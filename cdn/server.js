@@ -5,7 +5,7 @@ dotenv.config();
 require("../src/connection.js");
 const router = require("./src/routes/router.js");
 const { requestLogger } = require("../src/middlewares/request.middleware.js");
-const PORT = 5001;
+const PORT = 5003;
 
 const app = express();
 app.use(express.json());
