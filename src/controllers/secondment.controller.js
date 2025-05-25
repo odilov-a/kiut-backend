@@ -25,7 +25,6 @@ const formatSecondment = (secondment, lang) => {
     descriptionEn: secondment.descriptionEn,
     descriptionRu: secondment.descriptionRu,
     descriptionUz: secondment.descriptionUz,
-    photoUrl: secondment.photoUrl,
     createdAt: secondment.createdAt,
   };
 };

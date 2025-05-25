@@ -25,11 +25,6 @@ const secondmentSchema = new Schema(
       type: String,
       required: true,
     },
-    photoUrl: [
-      {
-        type: String,
-      },
-    ],
     createdAt: {
       type: Date,
       default: Date.now,
